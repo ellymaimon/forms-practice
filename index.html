@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Survey -->
+      <h1>Welcome to the survey</h1>
+      <form id="surveyForm">
+        <label for="inputName">Your name</label>
+        <input for="inputName" type="text">
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="pizza">
+            Pizza
+          </label>
+          <label>
+            <input type="radio" name="food" value="sushi">
+            Sushi
+          </label>
+          <label>
+            <input type="radio" name="food" value="tomato">
+            Tomato
+          </label>
+        </div>
+        <select class="form-control" id="music">
+          <option>Rock</option>
+          <option>Country</option>
+          <option>Christian</option>
+        </select>
+        <div class="form-group">
+          <label for="date">Your favourite date</label>
+          <input id="date" class="form-control" type="date">
+        </div>
+      </form>
+
+<hr>
+
+      <!-- Online Marketplace -->
+      <h1>Marketplace Order</h1>
+
+        <form id="marketForm">
+          <div class="form-group">
+            <label for="inputName">Enter your name:</label>
+            <input id="inputName" class="form-control" type="text">
+
+            <label for="inputAdd1">Adress Line 1:</label>
+            <input id="inputAdd1" class="form-control" type="text">
+
+            <label for="inputAdd2">Adress Line 2:</label>
+            <input id="inputAdd2" class="form-control" type="text">
+
+            <label for="inputCity">City:</label>
+            <input id="inputCity" class="form-control" type="text">
+
+            <label for="inputZip">Zip:</label>
+            <input id="inputZip" class="form-control" type="text">
+
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#receipt" id="receiptButton">Submit</button>
+          </div>
+        </form>
+
+        <div class="modal fade" id="receipt" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="reciptMessage">Receipt</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                  x
+                </button>
+              </div>
+              <div class="modal-body">
+                <p id="receiptBody">fdfadfdsfa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </body>
+</html>
