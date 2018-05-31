@@ -42,8 +42,7 @@
           <input id="date" class="form-control" type="date">
         </div>
       </form>
-
-<hr>
+      <hr>
 
       <!-- Online Marketplace -->
       <h1>Marketplace Order</h1>
@@ -84,7 +83,36 @@
             </div>
           </div>
         </div>
+        <hr>
 
+        <!-- Address book -->
+        <h1>Address book</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <p>Create a new contact</p>
+            <form id="addressBook">
+              <div class="form-group">
+                <label for="contactName">Enter contact name</label>
+                <input id="contactName" class="form-control" type="text">
+
+                <label for="contactAdd">Enter their address</label>
+                <input id="contactAdd" class="form-control" type="text">
+
+                <label for="contactPhone">Enter their phone #</label>
+                <input id="contactPhone" class="form-control" type="text">
+
+                <label for="contactEmail">Enter their email address</label>
+                <input id="contactEmail" class="form-control" type="text">
+              </div>
+              <button type="submit" class="btn btn-dark" id="addressButton">Save</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <ul id="contacts" class="list-unstyled">
+
+            </ul>
+          </div>
+        </div>
     </div>
   </body>
 </html>
